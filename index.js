@@ -1,19 +1,22 @@
-const fs = require("fs");
-const promptSync = require("prompt-sync")();
-// Tipo de entrega (normal ou urgente).
+const fs = require ("fs");
+const promptSync = require ("prompt-sync") ();
+const path = require ("path");
 
-let tipoEntrega = 0
+//nome do cliente e endereço
 
-while (tipoEntrega == 0) {
-    tipoEntrega = promptSync("Digite o tipo de entrega (Normal ou Urgente): ")
-    if(tipoEntrega == "Normal"){
-        console.log("Você definiu o tipo da entrega como Normal")
-    }else{
-        if(tipoEntrega == "Urgente"){
-            console.log("Você definiu o tipo da entrega como Urgente")
-        }else{
-            tipoEntrega = 0
-            console.log("Erro: Tipo de entrega inválida.")
-        }
+let nomeCliente = 0
+let enderecoCliente = 0
+
+while (!isNaN(nomeCliente)) {
+    nomeCliente = promptSync(`😊 Digite seu nome: `);
+    if(!isNaN(nomeCliente)){
+        console.log("Erro: Nome inválido.");
+    }
+}
+
+while (!isNaN(enderecoCliente)) {
+    enderecoCliente = promptSync(`📍 Digite seu endereço: `);
+    if(!isNaN(enderecoCliente)){
+        console.log("Erro: endereço inválido.");
     }
 }
