@@ -1,0 +1,4 @@
+Aqui estão todas as informações que foram armazenadas:
+1 - Seu nome é Nicolas, seu endereço é Sumare, a distância de entrega é 10, o valor por KM é 10, o tipo de entrega é Normal, e o valor total é 100;
+2 - Seu nome é Angel, seu endereço é Melancias, a distância de entrega é 10, o valor por KM é 10, o tipo de entrega é Urgente, e o valor total é 120;
+ Foram 3 entregas, e a média do custo de todas as entregas é de 6.666666666666667;
